@@ -16,7 +16,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        
+   
         <div align="center" id="section"></div>
          <h2 align="center">Suggested Items</h2>
          
@@ -53,7 +53,7 @@ and open the template in the editor.
 
 
                             if ($row['image'] != NULL)// when click image display same image next page
-                                echo "<a href=details.php?itemnumber=" . $row['itemnumber'] . " ><img align=center src=images/" . $row['image'] . " width='80' height='100'></img></a><br>";
+                                echo "<a href=details.php?itemnumber=" . $row['itemnumber'] . " ><img align=center src=images/" . $row['image'] . " width='180' height='200'></img></a><br>";
                             if ($row['price'] > 0) // display price & krona from database 
                                 echo "<font color=red align=center >Price:<br></font><b> KRONA " . $row['price'] . "</b><br>";
 
@@ -66,7 +66,7 @@ and open the template in the editor.
 
 
                             $counter = $counter + 1;
-                            if ($counter == 14)
+                            if ($counter == 24)
                                 break;
                         }
                         ?>
